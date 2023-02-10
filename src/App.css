@@ -1,0 +1,13 @@
+.App{
+    display: grid;
+    grid-template-rows:auto 1fr;
+    background-color: var(--Off-white);
+    padding: 4rem 15rem;
+    gap:1rem;
+}
+
+@media (max-width:375px) {
+    .App{
+        padding:4rem 2rem;
+    }
+}

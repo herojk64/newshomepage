@@ -1,0 +1,472 @@
+/* Base Page Layout */
+.base1{
+    grid-template-rows: auto 1fr auto;
+}
+/* Height */
+.minheight10rem{
+    min-height: 10rem;
+}
+.minheight20rem{
+    min-height: 20rem;
+}
+.minheight30rem{
+    min-height:30rem;
+}
+.minheight100vh{
+    min-height: 100vh;
+}
+/* Display */
+.block{
+    display: block;
+}
+.none{
+    display: none;
+}
+.inlineflex{
+    display: inline-flex;
+}
+.inline{
+    display: inline;
+}
+/* Grid */
+.grid{
+    display: grid;
+}
+/* tamplate deffer to the needs so only styling auto into it */
+.grid-tamp-row2{
+    grid-template-rows: auto auto;
+}
+.grid-tamp-col2{
+    grid-template-columns: auto auto;
+}
+/* Flex */
+.flex{
+    display: flex;
+}
+.flex1{
+    flex: 1;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-row{
+    flex-direction: row;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-nowrap{
+    flex-wrap: nowrap;
+}
+.flex-grow1{
+    flex-grow: 1;
+}
+.flex-grow0{
+    flex-grow: 0;
+}
+/* Position */
+.pos-static{
+    position: static;
+}
+.pos-r{
+    position: relative;
+}
+.pos-a{
+    position: absolute;
+}
+.pos-f{
+    position:fixed;
+}
+.pos-s{
+    position:sticky;
+}
+.pos-inh{
+    position: inherit;
+}
+.pos-init{
+    position:initial;
+}
+/* Positions for pos The values are all 0*/
+.left{
+    left:0;
+}
+.right{
+    right:0;
+}
+.top{
+    top:0;
+}
+.bottom{
+    bottom: 0;
+}
+/* Gap */
+.gap05{
+    gap:0.5rem;
+}
+.gap1{
+    gap:1rem;
+}
+.gap2{
+    gap:2rem;
+}
+.gap3{
+    gap:3rem;
+}
+.gap4{
+    gap:4rem;
+}
+/* Justify */
+.justify-center{
+    justify-content: center;
+}
+.justify-unset{
+    justify-content: unset;
+}
+.justify-initial{
+    justify-content: initial;
+}
+.justify-inherit{
+    justify-content: inherit;
+}
+.justify-start{
+    justify-content: start;
+}
+.justify-unsafe{
+    justify-content: unsafe;
+}
+.justify-safe{
+    justify-content: safe;
+}
+.justify-left{
+    justify-content: left;
+}
+.justify-right{
+    justify-content: right;
+}
+.justify-end{
+    justify-content: end;
+}
+.justify-fend{
+    justify-content: flex-end;
+}
+.justify-fstart{
+    justify-content: flex-start;
+}
+.justify-baseline{
+    justify-content: baseline;
+}
+.justify-spacearound{
+    justify-content: space-around;
+}
+.justify-spacebetween{
+    justify-content: space-between;
+}
+.justify-spaceevenly{
+    justify-content: space-evenly;
+}
+/* Float */
+.float-intlineend{
+    float:inline-end;
+}
+.float-inlinestart{
+    float:inline-start;
+}
+.float-unset{
+    float:unset;
+}
+.float-inherit{
+    float: inherit;
+}
+.float-initial{
+    float:initial;
+}
+.float-none{
+    float:none;
+}
+.float-left{
+    float:left;
+}
+.float-right{
+    float: right;
+}
+/* Clear */
+.clear-both{
+    clear: both;
+}
+.clear-inherit{
+    clear:inherit;
+}
+.clear-initial{
+    clear:initial;
+}
+.clear-none{
+    clear: none;
+}
+.clear-unset{
+    clear:unset;
+}
+.clear-right{
+    clear: right;
+}
+.clear-left{
+    clear: left;
+}
+/* List */
+.list-disc{
+    list-style: disc;
+}
+.list-circle{
+    list-style: circle;
+}
+.list-none{
+    list-style:none;
+}
+/* Align */
+.align-center{
+    align-items: center;
+}
+.align-unset{
+    align-items: unset;
+}
+.align-inherit{
+    align-items:inherit;
+}
+.align-initial{
+    align-items: initial;
+}
+.align-baseline{
+    align-items: baseline;
+}
+.align-stretch{
+    align-items: stretch;
+}
+.align-fstart{
+    align-items: flex-start;
+}
+.align-fend{
+    align-items: flex-end;
+}
+/* Padding */
+.p-leftauto{
+    padding:0px auto;
+}
+.p-rightauto{
+    padding:auto 0px;
+}
+.p05{
+    padding:0.5rem;
+}
+.p1{
+    padding:1rem;
+}
+.p2{
+    padding:2rem;
+}
+.p3{
+    padding:3rem;
+}
+.p4{
+    padding:4rem;
+}
+.pt05{
+    padding-top:0.5rem;
+}
+.pt1{
+    padding-top:1rem;
+}
+.pt2{
+    padding-top:2rem;
+}
+.pt3{
+    padding-top:3rem;
+}
+.pt4{
+    padding-top:4rem;
+}
+.pr05{
+    padding-right:0.5rem;
+}
+.pr1{
+    padding-right:1rem;
+}
+.pr2{
+    padding-right:2rem;
+}
+.pr3{
+    padding-right:3rem;
+}
+.pr4{
+    padding-right:4rem;
+}
+.pr5{
+    padding:5rem;
+}
+.pl05{
+    padding-left:0.5rem;
+}
+.pl1{
+    padding-left:1rem;
+}
+.pl2{
+    padding-left:2rem;
+}
+.pl3{
+    padding-left:3rem;
+}
+.pl4{
+    padding-left:4rem;
+}
+.pb05{
+    padding-bottom:0.5rem;
+}
+.pb1{
+    padding-bottom:1rem;
+}
+.pb2{
+    padding-bottom:2rem;
+}
+.pb3{
+    padding-bottom:3rem;
+}
+.pb4{
+    padding-bottom:4rem;
+}
+/* Margin */
+.m-leftauto{
+    margin-left: auto;
+}
+.m-rightauto{
+    margin-right: auto;
+}
+.m05{
+    margin:0.5rem;
+}
+.m1{
+    margin:1rem;
+}
+.m2{
+    margin:2rem;
+}
+.m3{
+    margin:3rem;
+}
+.m4{
+    margin:4rem;
+}
+.mt05{
+    margin-top:0.5rem;
+}
+.mt1{
+    margin-top:1rem;
+}
+.mt2{
+    margin-top:2rem;
+}
+.mt3{
+    margin-top:3rem;
+}
+.mt4{
+    margin-top:4rem;
+}
+.mr05{
+    margin-right:0.5rem;
+}
+.mr1{
+    margin-right:1rem;
+}
+.mr2{
+    margin-right:2rem;
+}
+.mr3{
+    margin-right:3rem;
+}
+.mr4{
+    margin-right:4rem;
+}
+.ml05{
+    margin-left:0.5rem;
+}
+.ml1{
+    margin-left:1rem;
+}
+.ml2{
+    margin-left:2rem;
+}
+.ml3{
+    margin-left:3rem;
+}
+.ml4{
+    margin-left:4rem;
+}
+.mb05{
+    margin-bottom:0.5rem;
+}
+.mb1{
+    margin-bottom:1rem;
+}
+.mb2{
+    margin-bottom:2rem;
+}
+.mb3{
+    margin-bottom:3rem;
+}
+.mb4{
+    margin-bottom:4rem;
+}
+/* Object */
+.of-cover{
+    object-fit: cover;
+}
+.of-contain{
+    object-fit: contain;
+}
+.of-fill{
+    object-fit: fill;
+}
+.of-none{
+    object-fit: none;
+}
+.of-sdown{
+    object-fit: scale-down;
+}
+.of-initial{
+    object-fit: initial;
+}
+.of-inherit{
+    object-fit: inherit;
+}
+.of-unset{
+    object-fit:unset;
+}
+/* Border Radius */
+.bradius5{
+    border-radius: 5px;
+}
+.bradius10{
+    border-radius: 10px;
+}
+.bradius15{
+    border-radius: 15px;
+}
+.bradius20{
+    border-radius: 20px;
+}
+.bradius25{
+    border-radius: 25px;
+}
+.bradius30{
+    border-radius:30px ;
+}
+.bradius-circle{
+    border: 50%;
+}
+/* Outline */
+.outline-none{
+    outline: none;
+}
+.outline-auto{
+    outline: auto;
+}
+.outline-invert{
+    outline: invert;
+}

@@ -1,0 +1,110 @@
+.nav-wrapper{
+    overflow: hidden;
+}
+.nav-wrapper ol li a{
+    color:var(--Dark-grayish-blue);
+}
+.nav-wrapper button{
+    display:none;
+    position: relative;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    z-index: 3;
+    margin-left: auto;
+}
+.nav-wrapper button img{
+    height:20px;
+    width: 20px;
+}
+.nav-wrapper ol{
+    display: inline-flex;
+}
+.nav-wrapper ol li a{
+    transition: 1s ease;
+}
+.nav-wrapper ol li a:hover{
+    color:var(--Soft-red)
+}
+.nav-wrapper button[data-status="0"] img:nth-child(1){
+    display: block;
+}
+.nav-wrapper button[data-status="1"] img:nth-child(1){
+    display: none;
+}
+.nav-wrapper button[data-status="0"] img:nth-child(2){
+    display: none;
+}
+.nav-wrapper button[data-status="1"] img:nth-child(2){
+    display: block;
+}
+
+@media screen and (max-width:375px) {
+    .nav-wrapper{
+        width: 80%;
+    }
+    .nav-wrapper ol li a{
+        color:var(--Very-dark-blue);
+    }
+    .nav-wrapper button{
+        display: block;
+    }
+    ol{
+        background-color: var(--Off-white);
+        position: fixed;
+        right: 0;
+        top:0;
+        overflow: hidden;
+        min-height: 120vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:2rem;
+        transition: 1s;
+        z-index: 1;
+        text-align: left;
+    }
+    .nav-wrapper ol li,.nav-wrapper ol li a{
+        width: 100%;
+    }
+    ol[data-status="0"]{
+        display: flex;
+        animation: navclose 1s ease;
+        animation-fill-mode: forwards;
+    }
+    ol[data-status="1"]{
+        display:inline-flex !important;
+        padding-left: 5rem;
+        animation: navmenu 1s ease;
+        animation-fill-mode: forwards;
+    }
+}
+@keyframes navmenu {
+    0%{
+        width: 0;
+        box-shadow: 0 0 5px 5px var(--Grayish-blue1);
+    }
+    50%{
+        width: 70%;
+    }
+    100%{
+        width: 70%;
+        box-shadow: 0 0 100px 100px var(--Grayish-blue1);
+    }
+}
+@keyframes navclose {
+    
+    0%{
+        width: 70%;
+        box-shadow: 0 0 100px 100px var(--Grayish-blue1);
+    } 
+    50%{
+        width: 70%;
+    }
+    100%{
+        width: 0;
+        box-shadow: 0 0 0px 0px var(--Grayish-blue1);
+        display: none !important;
+    }
+    
+}
